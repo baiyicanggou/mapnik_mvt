@@ -1,0 +1,701 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_925c3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_925c3.dir/build.make CMakeFiles/cmTC_925c3.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_925c3.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_925c3.dir/CheckSymbolExists.c.o   -c /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_925c3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_925c3.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_925c3.dir/CheckSymbolExists.c.o  -o cmTC_925c3 
+/usr/bin/ld: CMakeFiles/cmTC_925c3.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_925c3.dir/build.make:87: cmTC_925c3] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_925c3/fast] Error 2
+
+File /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ed1b7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ed1b7.dir/build.make CMakeFiles/cmTC_ed1b7.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed1b7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ed1b7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ed1b7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed1b7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_ed1b7.dir/CheckFunctionExists.c.o  -o cmTC_ed1b7 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ed1b7.dir/build.make:87: cmTC_ed1b7] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ed1b7/fast] Error 2
+
+
+Determining if the function __builtin_clz exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0692c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0692c.dir/build.make CMakeFiles/cmTC_0692c.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0692c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=__builtin_clz   -o CMakeFiles/cmTC_0692c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘__builtin_clz’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_0692c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0692c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=__builtin_clz    -rdynamic CMakeFiles/cmTC_0692c.dir/CheckFunctionExists.c.o  -o cmTC_0692c 
+/usr/bin/ld: CMakeFiles/cmTC_0692c.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `__builtin_clz'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_0692c.dir/build.make:87: cmTC_0692c] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0692c/fast] Error 2
+
+
+Determining if the function feenableexcept exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_15ade/fast"
+/usr/bin/make -f CMakeFiles/cmTC_15ade.dir/build.make CMakeFiles/cmTC_15ade.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15ade.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=feenableexcept   -o CMakeFiles/cmTC_15ade.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_15ade
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15ade.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=feenableexcept    -rdynamic CMakeFiles/cmTC_15ade.dir/CheckFunctionExists.c.o  -o cmTC_15ade 
+/usr/bin/ld: CMakeFiles/cmTC_15ade.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `feenableexcept'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_15ade.dir/build.make:87: cmTC_15ade] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_15ade/fast] Error 2
+
+
+Determining if the function getisax exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5f295/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5f295.dir/build.make CMakeFiles/cmTC_5f295.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5f295.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getisax   -o CMakeFiles/cmTC_5f295.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5f295
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f295.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getisax    -rdynamic CMakeFiles/cmTC_5f295.dir/CheckFunctionExists.c.o  -o cmTC_5f295 
+/usr/bin/ld: CMakeFiles/cmTC_5f295.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `getisax'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5f295.dir/build.make:87: cmTC_5f295] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5f295/fast] Error 2
+
+
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_517f2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_517f2.dir/build.make CMakeFiles/cmTC_517f2.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_517f2.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing    -o CMakeFiles/cmTC_517f2.dir/CheckIncludeFile.c.o   -c /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: io.h: No such file or directory
+ #include <io.h>
+          ^~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_517f2.dir/build.make:66: CMakeFiles/cmTC_517f2.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_517f2/fast] Error 2
+
+
+Determining if the include file ndir.h exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0da72/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0da72.dir/build.make CMakeFiles/cmTC_0da72.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0da72.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing    -o CMakeFiles/cmTC_0da72.dir/CheckIncludeFile.c.o   -c /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: ndir.h: No such file or directory
+ #include <ndir.h>
+          ^~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_0da72.dir/build.make:66: CMakeFiles/cmTC_0da72.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0da72/fast] Error 2
+
+
+Determining if the include file sys/int_types.h exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_97753/fast"
+/usr/bin/make -f CMakeFiles/cmTC_97753.dir/build.make CMakeFiles/cmTC_97753.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_97753.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing    -o CMakeFiles/cmTC_97753.dir/CheckIncludeFile.c.o   -c /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sys/int_types.h: No such file or directory
+ #include <sys/int_types.h>
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_97753.dir/build.make:66: CMakeFiles/cmTC_97753.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_97753/fast] Error 2
+
+
+Determining if the include file sys/ndir.h exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ca170/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ca170.dir/build.make CMakeFiles/cmTC_ca170.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ca170.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing    -o CMakeFiles/cmTC_ca170.dir/CheckIncludeFile.c.o   -c /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sys/ndir.h: No such file or directory
+ #include <sys/ndir.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_ca170.dir/build.make:66: CMakeFiles/cmTC_ca170.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ca170/fast] Error 2
+
+
+Determining if the include file windows.h exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5a317/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5a317.dir/build.make CMakeFiles/cmTC_5a317.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5a317.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing    -o CMakeFiles/cmTC_5a317.dir/CheckIncludeFile.c.o   -c /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: windows.h: No such file or directory
+ #include <windows.h>
+          ^~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_5a317.dir/build.make:66: CMakeFiles/cmTC_5a317.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5a317/fast] Error 2
+
+
+Determining if the include file xmlparse.h exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b856b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b856b.dir/build.make CMakeFiles/cmTC_b856b.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b856b.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing    -o CMakeFiles/cmTC_b856b.dir/CheckIncludeFile.c.o   -c /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: xmlparse.h: No such file or directory
+ #include <xmlparse.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_b856b.dir/build.make:66: CMakeFiles/cmTC_b856b.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_b856b/fast] Error 2
+
+
+Determining if the function _doprnt exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fce28/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fce28.dir/build.make CMakeFiles/cmTC_fce28.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fce28.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=_doprnt   -o CMakeFiles/cmTC_fce28.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fce28
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fce28.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=_doprnt    -rdynamic CMakeFiles/cmTC_fce28.dir/CheckFunctionExists.c.o  -o cmTC_fce28 
+/usr/bin/ld: CMakeFiles/cmTC_fce28.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_doprnt'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_fce28.dir/build.make:87: cmTC_fce28] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fce28/fast] Error 2
+
+
+Determining if the function _mktemp_s exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_970a1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_970a1.dir/build.make CMakeFiles/cmTC_970a1.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_970a1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=_mktemp_s   -o CMakeFiles/cmTC_970a1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_970a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_970a1.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=_mktemp_s    -rdynamic CMakeFiles/cmTC_970a1.dir/CheckFunctionExists.c.o  -o cmTC_970a1 
+/usr/bin/ld: CMakeFiles/cmTC_970a1.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_mktemp_s'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_970a1.dir/build.make:87: cmTC_970a1] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_970a1/fast] Error 2
+
+
+Determining if the function chsize exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2ef12/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2ef12.dir/build.make CMakeFiles/cmTC_2ef12.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ef12.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=chsize   -o CMakeFiles/cmTC_2ef12.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2ef12
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ef12.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=chsize    -rdynamic CMakeFiles/cmTC_2ef12.dir/CheckFunctionExists.c.o  -o cmTC_2ef12 
+/usr/bin/ld: CMakeFiles/cmTC_2ef12.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `chsize'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_2ef12.dir/build.make:87: cmTC_2ef12] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_2ef12/fast] Error 2
+
+
+Determining if the function FcFini exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ae5fb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ae5fb.dir/build.make CMakeFiles/cmTC_ae5fb.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae5fb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FcFini   -o CMakeFiles/cmTC_ae5fb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ae5fb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae5fb.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FcFini    -rdynamic CMakeFiles/cmTC_ae5fb.dir/CheckFunctionExists.c.o  -o cmTC_ae5fb 
+/usr/bin/ld: CMakeFiles/cmTC_ae5fb.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `FcFini'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ae5fb.dir/build.make:87: cmTC_ae5fb] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ae5fb/fast] Error 2
+
+
+Determining if the function FcInit exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8affd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8affd.dir/build.make CMakeFiles/cmTC_8affd.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8affd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FcInit   -o CMakeFiles/cmTC_8affd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8affd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8affd.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FcInit    -rdynamic CMakeFiles/cmTC_8affd.dir/CheckFunctionExists.c.o  -o cmTC_8affd 
+/usr/bin/ld: CMakeFiles/cmTC_8affd.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `FcInit'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_8affd.dir/build.make:87: cmTC_8affd] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8affd/fast] Error 2
+
+
+Determining if the function FT_Get_BDF_Property exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d0e93/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d0e93.dir/build.make CMakeFiles/cmTC_d0e93.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d0e93.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Get_BDF_Property   -o CMakeFiles/cmTC_d0e93.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d0e93
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0e93.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Get_BDF_Property    -rdynamic CMakeFiles/cmTC_d0e93.dir/CheckFunctionExists.c.o  -o cmTC_d0e93 
+/usr/bin/ld: CMakeFiles/cmTC_d0e93.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `FT_Get_BDF_Property'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_d0e93.dir/build.make:87: cmTC_d0e93] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d0e93/fast] Error 2
+
+
+Determining if the function FT_Get_Next_Char exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f1eee/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f1eee.dir/build.make CMakeFiles/cmTC_f1eee.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1eee.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Get_Next_Char   -o CMakeFiles/cmTC_f1eee.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f1eee
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1eee.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Get_Next_Char    -rdynamic CMakeFiles/cmTC_f1eee.dir/CheckFunctionExists.c.o  -o cmTC_f1eee 
+/usr/bin/ld: CMakeFiles/cmTC_f1eee.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `FT_Get_Next_Char'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_f1eee.dir/build.make:87: cmTC_f1eee] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f1eee/fast] Error 2
+
+
+Determining if the function FT_Get_PS_Font_Info exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5b352/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5b352.dir/build.make CMakeFiles/cmTC_5b352.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5b352.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Get_PS_Font_Info   -o CMakeFiles/cmTC_5b352.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5b352
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b352.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Get_PS_Font_Info    -rdynamic CMakeFiles/cmTC_5b352.dir/CheckFunctionExists.c.o  -o cmTC_5b352 
+/usr/bin/ld: CMakeFiles/cmTC_5b352.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `FT_Get_PS_Font_Info'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5b352.dir/build.make:87: cmTC_5b352] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5b352/fast] Error 2
+
+
+Determining if the function FT_Get_X11_Font_Format exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_23b57/fast"
+/usr/bin/make -f CMakeFiles/cmTC_23b57.dir/build.make CMakeFiles/cmTC_23b57.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_23b57.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Get_X11_Font_Format   -o CMakeFiles/cmTC_23b57.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_23b57
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23b57.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Get_X11_Font_Format    -rdynamic CMakeFiles/cmTC_23b57.dir/CheckFunctionExists.c.o  -o cmTC_23b57 
+/usr/bin/ld: CMakeFiles/cmTC_23b57.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `FT_Get_X11_Font_Format'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_23b57.dir/build.make:87: cmTC_23b57] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_23b57/fast] Error 2
+
+
+Determining if the function FT_GlyphSlot_Embolden exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3ec92/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3ec92.dir/build.make CMakeFiles/cmTC_3ec92.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3ec92.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_GlyphSlot_Embolden   -o CMakeFiles/cmTC_3ec92.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3ec92
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ec92.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_GlyphSlot_Embolden    -rdynamic CMakeFiles/cmTC_3ec92.dir/CheckFunctionExists.c.o  -o cmTC_3ec92 
+/usr/bin/ld: CMakeFiles/cmTC_3ec92.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `FT_GlyphSlot_Embolden'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_3ec92.dir/build.make:87: cmTC_3ec92] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3ec92/fast] Error 2
+
+
+Determining if the function FT_GlyphSlot_Oblique exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_77929/fast"
+/usr/bin/make -f CMakeFiles/cmTC_77929.dir/build.make CMakeFiles/cmTC_77929.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77929.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_GlyphSlot_Oblique   -o CMakeFiles/cmTC_77929.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_77929
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77929.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_GlyphSlot_Oblique    -rdynamic CMakeFiles/cmTC_77929.dir/CheckFunctionExists.c.o  -o cmTC_77929 
+/usr/bin/ld: CMakeFiles/cmTC_77929.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `FT_GlyphSlot_Oblique'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_77929.dir/build.make:87: cmTC_77929] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_77929/fast] Error 2
+
+
+Determining if the function FT_Has_PS_Glyph_Names exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_90eb4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_90eb4.dir/build.make CMakeFiles/cmTC_90eb4.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_90eb4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Has_PS_Glyph_Names   -o CMakeFiles/cmTC_90eb4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_90eb4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90eb4.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Has_PS_Glyph_Names    -rdynamic CMakeFiles/cmTC_90eb4.dir/CheckFunctionExists.c.o  -o cmTC_90eb4 
+/usr/bin/ld: CMakeFiles/cmTC_90eb4.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `FT_Has_PS_Glyph_Names'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_90eb4.dir/build.make:87: cmTC_90eb4] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_90eb4/fast] Error 2
+
+
+Determining if the function FT_Library_SetLcdFilter exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8bf1a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8bf1a.dir/build.make CMakeFiles/cmTC_8bf1a.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8bf1a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Library_SetLcdFilter   -o CMakeFiles/cmTC_8bf1a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8bf1a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8bf1a.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Library_SetLcdFilter    -rdynamic CMakeFiles/cmTC_8bf1a.dir/CheckFunctionExists.c.o  -o cmTC_8bf1a 
+/usr/bin/ld: CMakeFiles/cmTC_8bf1a.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `FT_Library_SetLcdFilter'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_8bf1a.dir/build.make:87: cmTC_8bf1a] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8bf1a/fast] Error 2
+
+
+Determining if the function FT_Load_Sfnt_Table exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_63de3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_63de3.dir/build.make CMakeFiles/cmTC_63de3.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_63de3.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Load_Sfnt_Table   -o CMakeFiles/cmTC_63de3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_63de3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63de3.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Load_Sfnt_Table    -rdynamic CMakeFiles/cmTC_63de3.dir/CheckFunctionExists.c.o  -o cmTC_63de3 
+/usr/bin/ld: CMakeFiles/cmTC_63de3.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `FT_Load_Sfnt_Table'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_63de3.dir/build.make:87: cmTC_63de3] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_63de3/fast] Error 2
+
+
+Determining if the function FT_Select_Size exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_47ac3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_47ac3.dir/build.make CMakeFiles/cmTC_47ac3.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_47ac3.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Select_Size   -o CMakeFiles/cmTC_47ac3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_47ac3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47ac3.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=FT_Select_Size    -rdynamic CMakeFiles/cmTC_47ac3.dir/CheckFunctionExists.c.o  -o cmTC_47ac3 
+/usr/bin/ld: CMakeFiles/cmTC_47ac3.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `FT_Select_Size'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_47ac3.dir/build.make:87: cmTC_47ac3] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_47ac3/fast] Error 2
+
+
+Determining if the function gcov exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_545fd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_545fd.dir/build.make CMakeFiles/cmTC_545fd.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_545fd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=gcov   -o CMakeFiles/cmTC_545fd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_545fd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_545fd.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=gcov    -rdynamic CMakeFiles/cmTC_545fd.dir/CheckFunctionExists.c.o  -o cmTC_545fd 
+/usr/bin/ld: CMakeFiles/cmTC_545fd.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `gcov'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_545fd.dir/build.make:87: cmTC_545fd] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_545fd/fast] Error 2
+
+
+Determining if the function getexecname exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_24763/fast"
+/usr/bin/make -f CMakeFiles/cmTC_24763.dir/build.make CMakeFiles/cmTC_24763.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24763.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getexecname   -o CMakeFiles/cmTC_24763.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_24763
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24763.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getexecname    -rdynamic CMakeFiles/cmTC_24763.dir/CheckFunctionExists.c.o  -o cmTC_24763 
+/usr/bin/ld: CMakeFiles/cmTC_24763.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `getexecname'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_24763.dir/build.make:87: cmTC_24763] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_24763/fast] Error 2
+
+
+Determining if the function getprogname exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e1dc8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e1dc8.dir/build.make CMakeFiles/cmTC_e1dc8.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1dc8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getprogname   -o CMakeFiles/cmTC_e1dc8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e1dc8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1dc8.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=getprogname    -rdynamic CMakeFiles/cmTC_e1dc8.dir/CheckFunctionExists.c.o  -o cmTC_e1dc8 
+/usr/bin/ld: CMakeFiles/cmTC_e1dc8.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `getprogname'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e1dc8.dir/build.make:87: cmTC_e1dc8] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e1dc8/fast] Error 2
+
+
+Determining if the function poppler_page_render exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8b204/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8b204.dir/build.make CMakeFiles/cmTC_8b204.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8b204.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=poppler_page_render   -o CMakeFiles/cmTC_8b204.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8b204
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b204.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=poppler_page_render    -rdynamic CMakeFiles/cmTC_8b204.dir/CheckFunctionExists.c.o  -o cmTC_8b204 
+/usr/bin/ld: CMakeFiles/cmTC_8b204.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `poppler_page_render'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_8b204.dir/build.make:87: cmTC_8b204] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8b204/fast] Error 2
+
+
+Determining if the function posix_fadivse exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5ab0c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5ab0c.dir/build.make CMakeFiles/cmTC_5ab0c.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5ab0c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=posix_fadivse   -o CMakeFiles/cmTC_5ab0c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5ab0c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ab0c.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=posix_fadivse    -rdynamic CMakeFiles/cmTC_5ab0c.dir/CheckFunctionExists.c.o  -o cmTC_5ab0c 
+/usr/bin/ld: CMakeFiles/cmTC_5ab0c.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `posix_fadivse'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5ab0c.dir/build.make:87: cmTC_5ab0c] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_5ab0c/fast] Error 2
+
+
+Determining if the function rsvg_pixbuf_from_file exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_138c0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_138c0.dir/build.make CMakeFiles/cmTC_138c0.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_138c0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=rsvg_pixbuf_from_file   -o CMakeFiles/cmTC_138c0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_138c0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_138c0.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=rsvg_pixbuf_from_file    -rdynamic CMakeFiles/cmTC_138c0.dir/CheckFunctionExists.c.o  -o cmTC_138c0 
+/usr/bin/ld: CMakeFiles/cmTC_138c0.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `rsvg_pixbuf_from_file'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_138c0.dir/build.make:87: cmTC_138c0] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_138c0/fast] Error 2
+
+
+Determining if the function XML_SetDoctypeDeclHandler exists failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9cda4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9cda4.dir/build.make CMakeFiles/cmTC_9cda4.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9cda4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=XML_SetDoctypeDeclHandler   -o CMakeFiles/cmTC_9cda4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9cda4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9cda4.dir/link.txt --verbose=1
+/usr/bin/cc  -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing -DCHECK_FUNCTION_EXISTS=XML_SetDoctypeDeclHandler    -rdynamic CMakeFiles/cmTC_9cda4.dir/CheckFunctionExists.c.o  -o cmTC_9cda4 
+/usr/bin/ld: CMakeFiles/cmTC_9cda4.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `XML_SetDoctypeDeclHandler'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9cda4.dir/build.make:87: cmTC_9cda4] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9cda4/fast] Error 2
+
+
+Determining size of uint128_t failed with the following output:
+Change Dir: /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_497a0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_497a0.dir/build.make CMakeFiles/cmTC_497a0.dir/build
+make[1]: Entering directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_497a0.dir/SIZEOF_UINT128_T.c.o
+/usr/bin/cc   -Wno-parentheses-equality -Wno-unused-local-typedef -Wno-uninitialized -Wno-incompatible-pointer-types -Wno-unused-variable -Wno-float-conversion -Wno-implicit-function-declaration -Wno-deprecated-declarations -Wno-shadow -Wno-unused-function -Wno-format-extra-args -Wno-unknown-pragmas -Wno-tautological-compare -Wno-attributes -Wno-unused-const-variable -Wno-sign-compare -Wno-deprecated-declarations -Wno-cpp -Wno-unused-but-set-variable -Wno-misleading-indentation -Wno-strict-aliasing    -o CMakeFiles/cmTC_497a0.dir/SIZEOF_UINT128_T.c.o   -c /home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT128_T.c
+/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT128_T.c:23:22: error: ‘uint128_t’ undeclared here (not in a function); did you mean ‘uint32_t’?
+ #define SIZE (sizeof(uint128_t))
+                      ^~~~~~~~~
+/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT128_T.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+cc1: warning: unrecognized command line option ‘-Wno-unused-local-typedef’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+make[1]: *** [CMakeFiles/cmTC_497a0.dir/build.make:66: CMakeFiles/cmTC_497a0.dir/SIZEOF_UINT128_T.c.o] Error 1
+make[1]: Leaving directory '/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_497a0/fast] Error 2
+
+/home/xuemeng/work/flywave/mapnic/flywave-mapnik/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT128_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(uint128_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+

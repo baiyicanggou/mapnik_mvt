@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/icupkg.dir/source/tools/icupkg/icupkg.cpp.o CMakeFiles/icupkg.dir/no-op.cc.o  -o bin/icupkg libicutools.a libicudata.a 

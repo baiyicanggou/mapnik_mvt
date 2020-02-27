@@ -1,0 +1,2 @@
+/usr/bin/ar qc libicudt.a  CMakeFiles/icudt.dir/icudt60l_dat.c.o
+/usr/bin/ranlib libicudt.a

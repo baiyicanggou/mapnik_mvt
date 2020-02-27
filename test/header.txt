@@ -1,0 +1,4 @@
+/Volumes/Projection/flywave-mapnik/external/mapnik/include /Volumes/Projection/flywave-mapnik/external/libboost/boost_1_67_0 /Volumes/Projection/flywave-mapnik/external/mapnik/deps /Volumes/Projection/flywave-mapnik/external/mapnik/deps/agg/include /Volumes/Projection/flywave-mapnik/external/mapnik/deps/mapbox/variant/include /Volumes/Projection/flywave-mapnik/external/icu/source/common /Volumes/Projection/flywave-mapnik/external/mapnik/vector_tile/protozero/include /Volumes/Projection/flywave-mapnik/external/rapidjson/include /Volumes/Projection/flywave-mapnik/external/mapnik/vector_tile/src /Volumes/Projection/flywave-mapnik/external/mapnik/vector_tile/geometry/include /Volumes/Projection/flywave-mapnik/external/harfbuzz/include
+
+
+ /Volumes/Projection/flywave-mapnik/libs   

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libiconv.a  CMakeFiles/iconv.dir/iconv.c.o CMakeFiles/iconv.dir/localcharset.c.o
+/usr/bin/ranlib libiconv.a

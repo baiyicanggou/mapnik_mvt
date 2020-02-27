@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/genccode.dir/source/tools/genccode/genccode.c.o CMakeFiles/genccode.dir/no-op.cc.o  -o bin/genccode libicutools.a libicudata.a 

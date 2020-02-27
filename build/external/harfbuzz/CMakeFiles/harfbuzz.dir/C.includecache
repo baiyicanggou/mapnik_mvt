@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xuemeng/work/flywave/mapnic/flywave-mapnik/external/harfbuzz/src/hb-ucdn/ucdn.c
+stdio.h
+-
+stdlib.h
+-
+stdint.h
+-
+ucdn.h
+/home/xuemeng/work/flywave/mapnic/flywave-mapnik/external/harfbuzz/src/hb-ucdn/ucdn.h
+unicodedata_db.h
+/home/xuemeng/work/flywave/mapnic/flywave-mapnik/external/harfbuzz/src/hb-ucdn/unicodedata_db.h
+
+/home/xuemeng/work/flywave/mapnic/flywave-mapnik/external/harfbuzz/src/hb-ucdn/ucdn.h
+inttypes.h
+-
+sys/inttypes.h
+-
+stdint.h
+-
+
+/home/xuemeng/work/flywave/mapnic/flywave-mapnik/external/harfbuzz/src/hb-ucdn/unicodedata_db.h
+
